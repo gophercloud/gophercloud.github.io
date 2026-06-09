@@ -2,12 +2,20 @@
   "name": "gophercloud.io",
   "type": "module",
   "version": "0.1.0",
+  "packageManager": "pnpm@11.5.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,astro,md,css,json}": "prettier --check"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.39.3",
