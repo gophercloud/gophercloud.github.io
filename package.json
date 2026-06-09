@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
-    "*.{ts,astro,md,css,json,yml,yaml}": "prettier --check"
+    "*.{ts,astro,md,css,json,yml,yaml}": "prettier --write"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.39.3",
