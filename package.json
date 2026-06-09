@@ -15,7 +15,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,astro,md,css,json}": "prettier --check"
+    "*.{ts,astro,md,css,json,yml,yaml}": "prettier --check"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.39.3",
