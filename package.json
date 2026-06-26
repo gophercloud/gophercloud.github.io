@@ -13,10 +13,14 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "astro sync && tsc --noEmit"
   },
   "lint-staged": {
     "*.{ts,astro,md,css,json,yml,yaml}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "pnpm": ">=11.5.2"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.39.3",
