@@ -1,0 +1,6 @@
+# Auto-generated files that Prettier must not touch
+pnpm-lock.yaml
+dist/
+.astro/
+node_modules/
+.husky
